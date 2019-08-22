@@ -3,5 +3,19 @@ name = "rust-plotter"
 version = "0.1.0"
 authors = ["Ryan McWhorter <rmcwhorter99@gmail.com>"]
 edition = "2018"
+repository = "https://github.com/rmcwhorter/rust-plotter.git"
+homepage = "https://github.com/rmcwhorter/rust-plotter"
+readme = "README.md"
+license = "MIT"
+discription = "A quick and dirty library to plot Vec<f64>s with Matplotlib."
+keywords = ["matplotlib", "plot", "graph", "graphics"]
+categories = ["multimedia::images"]
+
+[lib]
+name = "plotting"
+path = "src/lib.rs"
 
 [dependencies]
+serde = { version = "1.0.99" }
+serde-pickle = { version = "0.5.0" }
+rand = { version = "0.7.0" }
