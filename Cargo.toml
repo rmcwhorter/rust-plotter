@@ -1,5 +1,5 @@
 [package]
-name = "rpl"
+name = "rust-plotter"
 version = "0.1.0"
 authors = ["Ryan McWhorter <rmcwhorter99@gmail.com>"]
 edition = "2018"
