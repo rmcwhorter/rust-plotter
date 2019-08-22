@@ -7,7 +7,7 @@ repository = "https://github.com/rmcwhorter/rust-plotter.git"
 homepage = "https://github.com/rmcwhorter/rust-plotter"
 readme = "README.md"
 license = "MIT"
-discription = "A quick and dirty library to plot Vec<f64>s with Matplotlib."
+description = "A quick and dirty library to plot Vec<f64>s with Matplotlib."
 keywords = ["matplotlib", "plot", "graph", "graphics"]
 categories = ["multimedia::images"]
 
