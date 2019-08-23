@@ -5,6 +5,7 @@ extern crate serde_pickle;
 //Needed to write stuff to files, and to delete temporary files
 use std::fs::File;
 use std::io::prelude::*;
+use std::env;
 
 //Needed to call a Python script from Rust
 use std::process::Command;
@@ -14,7 +15,8 @@ extern crate rand;
 
 pub fn plot(basic_vectors: &(Vec<f64>, Vec<f64>)) {
     //Serialize the data and write it to a pickle file.
-    let ser_path = "output.tmp.pkl";
+    let global_path = env::current_dir().unwrap();
+    let ser_path: &str = &format!("{}/output.tmp.pkl", global_path.to_str().unwrap());
     let serialized = serde_pickle::to_vec(basic_vectors, true).unwrap();
     let mut buffer = File::create(ser_path).unwrap();
     match buffer.write(&serialized) {
