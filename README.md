@@ -1,5 +1,4 @@
 # Rust-Plotter
-***
 
 ### Intended Use Case
 
