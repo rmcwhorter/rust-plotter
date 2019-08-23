@@ -28,7 +28,10 @@ pub fn plot(basic_vectors: &(Vec<f64>, Vec<f64>)) {
     };
 
     //Now we send python the path to the serialized file and let matplotlib create a graph of it for us.
-    let py_path = "src/plotter.py";
+    //let py_path = "src/plotter.py";
+
+    let py_path = &format!("{}/plotter.py", global_path.to_str().unwrap());
+
     let _new_command = Command::new("pythonw")
         .arg(py_path)
         .arg(ser_path)
