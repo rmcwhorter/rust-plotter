@@ -7,3 +7,5 @@ Rust-Plotter is intended to function as a stop gap plotting library until someon
 ### Dependencies
 
 R-P requires first and foremost Python 3+ and Matplotlib. If you don't have those, you can find them here: [Python](https://www.python.org/downloads/) and [Matplotlib](https://github.com/matplotlib/matplotlib). We also use [Serde](https://github.com/serde-rs/serde) and [serde-pickle](https://github.com/birkenfeld/serde-pickle), but these are dealt with in Cargo.toml.
+
+### Please note that this is currently nonfunctional if imported from Crates.io. It should work if cloned from github.
